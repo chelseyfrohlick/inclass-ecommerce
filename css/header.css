@@ -37,3 +37,14 @@
 .current{
 	background-color:red;
 }
+
+
+.banner{
+	background:url(../images/banner.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 5rem 1rem 1rem;
+}
+
+.banner h2{
+	color:#fff;
+}
