@@ -5,3 +5,15 @@ title: dinosaurs
 
 <h1> Dinosaurs </h1>
 <p> All the dinosaur species that ever existed </p>
+
+<ul>
+    {% for dino in site.pages %}
+    {% if dino.category == 'dinosaur' %}
+    <li>
+    <a href="{{site.baseurl}}{{dino.url}}">
+    <img src="{{site.baseurl}}/images/{{dino.image}}" alt="">
+    {{dino.name}}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
